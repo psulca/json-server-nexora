@@ -12,6 +12,8 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(router);
 
-// Para Vercel, necesitamos exportar como handler serverless
-export default server;
+// Handler para Vercel serverless functions
+export default (req, res) => {
+  return server(req, res, () => {});
+};
 
