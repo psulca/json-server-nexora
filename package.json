@@ -1,0 +1,21 @@
+{
+  "name": "nexora-service",
+  "version": "1.0.0",
+  "description": "API REST para gestión de voluntariados y ONGs",
+  "main": "db.json",
+  "type": "module",
+  "scripts": {
+    "start": "json-server --watch db.json",
+    "dev": "json-server --watch db.json"
+  },
+  "keywords": [
+    "api",
+    "voluntariado",
+    "ong"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

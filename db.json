@@ -1,0 +1,66 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "email": "juan@example.com",
+      "password": "12345",
+      "rol": "voluntario"
+    },
+    {
+      "id": 2,
+      "nombre": "Fundación Esperanza",
+      "email": "contacto@esperanza.org",
+      "password": "12345",
+      "rol": "ong"
+    }
+  ],
+  "ongs": [
+    {
+      "id": 1,
+      "nombre": "Fundación Esperanza",
+      "email": "contacto@esperanza.org",
+      "descripcion": "Organización dedicada a ayudar a comunidades vulnerables",
+      "usuarioId": 2
+    }
+  ],
+  "voluntarios": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "email": "juan@example.com",
+      "habilidades": ["educación", "construcción"],
+      "usuarioId": 1
+    }
+  ],
+  "oportunidades": [
+    {
+      "id": 1,
+      "titulo": "Voluntariado de reforestación",
+      "descripcion": "Plantación de árboles en la zona sur",
+      "ubicacion": "Cusco",
+      "fechaPublicacion": "2024-01-15T10:00:00.000Z",
+      "estadoPublicacion": true,
+      "ongId": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Apoyo educativo a niños",
+      "descripcion": "Brindar clases de apoyo escolar en comunidades rurales",
+      "ubicacion": "Lima",
+      "fechaPublicacion": "2024-01-20T10:00:00.000Z",
+      "estadoPublicacion": true,
+      "ongId": 1
+    }
+  ],
+  "postulaciones": [
+    {
+      "id": 1,
+      "voluntarioId": 1,
+      "oportunidadId": 1,
+      "estado": "enviada",
+      "fecha": "2024-01-16T10:00:00.000Z"
+    }
+  ]
+}
+
